@@ -83,11 +83,11 @@ end
 def n_to_n(number)
   puts "Bestäm ursprungliga talbas"
   from_bas = gets.chomp.to_i
-  puts "Bestäm viljande talbas"
+  puts "Bestäm beviljad talbas"
   to_bas = gets.chomp.to_i
 
-  decimal = n_to_ten(number, from_bas)  # Först konvertera till decimal (bas 10)
-  result = ten_to_n(decimal, to_bas)    # Sedan konvertera till målbasis
+  decimal = n_to_ten(number, from_bas)  # Först omvandla till decimal (bas 10)
+  result = ten_to_n(decimal, to_bas)    # Sedan omvandla till målbasis
   return result
 end
 
